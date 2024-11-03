@@ -1,9 +1,11 @@
+---
+import Modal from "./Modal.astro"
+---
+
 <div class="flex justify-between items-center w-full h-auto gap-2 py-2">
     <h1 class="text-2xl font-bold">villadiegocode</h1>
     <div class="flex w-full justify-end items-center">
-    
-        <button
-        type="button"
+        <button data-modal-target="progress-modal" data-modal-toggle="progress-modal" type="button"
         class="text-white bg-[#a04747] hover:bg-[#8f3f3f]/100 focus:ring-4 focus:outline-none focus:ring-[#8f3f3f]/80 font-bold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#8f3f3f]/100 dark:focus:ring-[#8f3f3f]/80 me-2 mb-2">
         <svg
             aria-hidden="true"
@@ -15,5 +17,7 @@
         </svg>
         Contáctame
     </button>
+    <!-- Main modal -->
+     <Modal id="progress-modal" title="¿ Deseas contactarme ?" phone="+573007462735" email="carlovinar93@gmail.com" />
     </div>
 </div>
