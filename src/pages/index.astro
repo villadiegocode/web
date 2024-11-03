@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Menu from '../components/Menu.astro';
 import Card from '../components/Card.astro';
 import SocialMedia from '../components/SocialMedia.astro';
+import { Image } from 'astro:assets';
+import imagenHeader from '../images/coding-bro.svg'
 ---
 
 <Layout title="villadiegocode.">
@@ -11,7 +13,7 @@ import SocialMedia from '../components/SocialMedia.astro';
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 			<div class="flex flex-col w-full justify-center items-center">
 				<h2 class="text-2xl font-bold">Hola, soy Carlos Villadiego 🤙</h2>
-				<img class="h-auto max-w-lg" src="/src/images/coding-bro.svg" alt="image description">
+				<Image class="h-auto max-w-lg" src={imagenHeader} alt="image description" />
 				<p class="leading-5">
 				<span class="font-semibold">Desarrollador Junior enfocado en Angular y PrimeNG, con experiencia en aplicaciones web reactivas y manejo avanzado de formularios y validaciones.</span>
 				Con habilidades para crear interfaces dinámicas y eficientes, me especializo en código limpio y soluciones bien estructuradas. Apasionado por el aprendizaje continuo y la resolución
