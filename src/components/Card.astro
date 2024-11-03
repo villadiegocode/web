@@ -1,4 +1,6 @@
 ---
+import {fade } from 'astro:transitions';
+
 interface Props {
 	title: string;
 	subtitle: string;
@@ -11,7 +13,7 @@ const { href, title, subtitle, d1, d2 } = Astro.props;
 ---
 
 
-<div class="w-full lg:w-9/12 p-6 bg-white border-2 border-black shadow-card">
+<div transition:animate={fade({duration: '0.4s'} )} class="w-full lg:w-9/12 p-6 bg-white border-2 border-black shadow-card">
 	<div class="flex justify-start items-center gap-2">
 		<svg class="w-7 h-7 text-black mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
 			<path d={d1}/>
