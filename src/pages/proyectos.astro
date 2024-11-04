@@ -1,8 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import CardProjects from "../components/CardProject.astro";
 
 ---
 <Layout title="Proyectos">
-    <h1>Pagina de Proyectos</h1>
+    <main class="m-auto lg:w-11/12  main-layout p-3 mt-3 mb-7">
+        <div class="flex w-full justify-center items-center mx-4">
+            <h2 class="font-bold text-4xl">Mis Proyectos</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div class="flex flex-col w-full justify-center items-center mt-5">
+                <CardProjects src="src/images/image-1.jpg" subtitle="Proyecto web con Angular y fireba para el control de los gastos personales"
+                              title="GastoGuard" linkRepo="https://github.com/villadiegocode/gasto-guard" linkDeploy="https://gastoguard-staging.netlify.app/"/>
+            </div>
+            <div class="flex flex-col w-full justify-center items-center mt-5">
+                <CardProjects src="src/images/image-1.jpg" subtitle="Proyecto web con Angular y fireba para el control de los gastos personales"
+                              title="GastoGuard" linkRepo="https://github.com/villadiegocode/gasto-guard" linkDeploy="https://gastoguard-staging.netlify.app/"/>
+            </div>
+            <div class="flex flex-col w-full justify-center items-center mt-5">
+                <CardProjects src="src/images/image-1.jpg" subtitle="Proyecto web con Angular y fireba para el control de los gastos personales"
+                              title="GastoGuard" linkRepo="https://github.com/villadiegocode/gasto-guard" linkDeploy="https://gastoguard-staging.netlify.app/"/>
+            </div>
+        </div>
+    </main>
 
 </Layout>
+
+<style>
+	.main-layout {
+		max-width: calc(100% - 1rem);
+	}
+</style>
