@@ -12,7 +12,7 @@ const {src, title, subtitle, linkRepo, linkDeploy} = Astro.props;
 import {fade } from 'astro:transitions';
 ---
 
-<div ransition:animate={fade({duration: '0.6s'} )}  class="w-11/12 bg-white border-2 border-black shadow-card" ">
+<div transition:animate={fade( {duration: '0.6s'} )}  class="w-11/12 bg-white border-2 border-black shadow-card">
         <img src={src} alt="PROYECTO" />
     <div class="p-5">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
