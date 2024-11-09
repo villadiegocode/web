@@ -1,8 +1,24 @@
 ---
+import ItemIconSkill from "../components/ItemIconSkill.astro";
+import ItemSkill from "../components/ItemSkill.astro";
 import Layout from "../layouts/Layout.astro";
 
 ---
-<Layout title="Skills">
-    <h1>Pagina de Skills</h1>
 
+<Layout title="Skills">
+  <main class="m-auto lg:w-11/12 main-layout p-3 mt-3">
+    <div class="flex w-full justify-center items-center mx-4">
+      <h2 class="font-bold text-4xl">Mis Skills</h2>
+    </div>
+    <div class="flex w-full justify-center items-center mt-8">
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <ItemIconSkill html="html" css="css"  javascrit="js" angular="angular" primeng="primeNG"
+                        tailwind="tailwind" astro="astro" git="git" 
+                        title="Hard Skills" subtitle="Conjunto de tecnologías aprendidas para el desarrollo de software"
+                        />
+        <ItemSkill title="Soft Skills" subtitle="Conjunto de mis habilidades blandas para la resolución de problemas"  comunicacion="Comunicación" 
+                    pensamientoCritico="Pensamiento crítico" eticaLaboral="Ética laboral" trabajoEquipo="Trabajo en equipo"/>
+      </ol>
+    </div>
+  </main>
 </Layout>

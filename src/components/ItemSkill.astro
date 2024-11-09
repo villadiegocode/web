@@ -1,0 +1,23 @@
+---
+interface Props{
+    title: string,
+    subtitle: string,
+    comunicacion: string,
+    pensamientoCritico: string,
+    eticaLaboral: string,
+    trabajoEquipo: string
+}
+
+const {  title, subtitle, comunicacion, pensamientoCritico, eticaLaboral, trabajoEquipo} = Astro.props;
+---
+<li class="mb-10 ms-4">
+    <div class="absolute w-3 h-3 bg-[#a04747] rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-[#a04747]"></div>
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
+    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{subtitle}</p>
+    <div class="flex flex-col md:flex-row justify-center items-start gap-2">
+        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{comunicacion}</span>
+        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{pensamientoCritico}</span>
+        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{eticaLaboral}</span>
+        <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">{trabajoEquipo}</span>
+    </div>
+</li>
