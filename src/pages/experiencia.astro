@@ -1,8 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+import ItemExperience from "../components/ItemExperience.astro";
 ---
-<Layout title="Experiencias">
-    <h1>Pagina de experiencias</h1>
 
+<Layout title="Experiencias">
+  <main class="m-auto lg:w-11/12 main-layout p-3 mt-3">
+    <div class="flex w-full justify-center items-center mx-4">
+      <h2 class="font-bold text-4xl">Mis experiencias</h2>
+    </div>
+
+    <div class="flex w-full justify-center items-center mt-8">
+      <ol class="relative border-s border-gray-200 dark:border-gray-700">
+        <ItemExperience
+          date="Junio 2023 - Actualidad"
+          title="Fondar Consulting / Desarrollador FrontEnd freelance"
+          subtitle="Se desarrollan múltiples proyectos con Angular como framework y primeNG como librería de componentes"
+        />
+
+        <ItemExperience
+          date="Febrero 2023 - Mayo 2023"
+          title="Dr. Robot Tech / Desarrollador FrontEnd"
+          subtitle="Desarrollo de aplicación administrativa en donde se usó AdminLTE como template para toda la UI y JavaScript para interactividad"
+        />
+      </ol>
+    </div>
+  </main>
 </Layout>
