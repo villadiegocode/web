@@ -4,18 +4,15 @@ interface Props{
     subtitle: string,
     linkRepo: string,
     linkDeploy: string,
-    srcOne: string,
-    altOne: string,
-    srcTwo: string,
-    altTwo: string
-    srcThree: string,
-    altThree: string
+    iconOne: string,
+    iconTwo: string,
+    iconThree: string
 }
 
 
-const {title, subtitle, linkRepo, linkDeploy, srcOne, altOne, srcTwo, altTwo, srcThree, altThree} = Astro.props;
+const {title, subtitle, linkRepo, linkDeploy, iconOne, iconTwo, iconThree} = Astro.props;
+import { Icon } from 'astro-icon/components';
 import {fade } from 'astro:transitions';
-import IconSvg from './IconSvg.astro';
 ---
 
 <div transition:animate={fade( {duration: '0.6s'} )}  class="w-11/12 bg-white border-2 border-black shadow-card">
@@ -23,10 +20,9 @@ import IconSvg from './IconSvg.astro';
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{subtitle}</p>
         <div class="flex w-full flex-wrap justify-center items-center gap-2">
-            <IconSvg src={srcOne} alt={altOne}/>
-            <IconSvg src={srcTwo} alt={altTwo}/>
-            <IconSvg src={srcThree} alt={altThree}/>
-            
+            <Icon name={iconOne}/>
+            <Icon name={iconTwo}/>
+            <Icon name={iconThree}/> 
         </div>
         <div class="flex flex-col w-full justify-between gap-2 mt-3">
             <a href={linkRepo} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg
@@ -52,4 +48,8 @@ import IconSvg from './IconSvg.astro';
         box-shadow: 4px 4px black;
 
     }
+
+    [data-icon] {
+    font-size: 2.5rem;
+}
 </style>

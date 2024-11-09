@@ -8,48 +8,42 @@ import CardProjects from "../components/CardProject.astro";
         <div class="flex w-full justify-center items-center mx-4">
             <h2 class="font-bold text-4xl">Mis Proyectos</h2>
         </div>
+        <div class="flex w-auto justify-center items-center mt-4">
+            <p><span class="font-bold text-xl text-primary">L</span>es comparto una lista de mis principales proyectos, en donde quiero mostrarles como aplico mis habilidades.
+                Cada proyecto destaca diferentes áreas de mi experiencia, desde el desarrollo de interfaces intuitivas hasta la integración con APIs.
+            </p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <div class="flex flex-col w-full justify-center items-center mt-5">
                 <CardProjects subtitle="Proyecto web con autenticacíon para el control de los gastos personales"
                               title="GastoGuard"
                               linkRepo="https://github.com/villadiegocode/gasto-guard"
                               linkDeploy="https://gastoguard-staging.netlify.app/"
-                              srcOne="https://img.icons8.com/ios-filled/50/angularjs.png"
-                              altOne="Angular"
-                              srcTwo="https://img.icons8.com/color/48/firebase.png"
-                              altTwo="Firebase"
-                              srcThree="https://img.icons8.com/fluency/48/primeng.png"
-                              altThree="PrimeNG"
-                              
+                              iconOne="angular"
+                              iconTwo="firebase"
+                              iconThree="primeNG"
                               />
             </div>
             <div class="flex flex-col w-full justify-center items-center mt-5">
-                <CardProjects subtitle="Proyecto web con autenticacíon para el control de los gastos personales"
-                              title="GastoGuard"
-                              linkRepo="https://github.com/villadiegocode/gasto-guard"
-                              linkDeploy="https://gastoguard-staging.netlify.app/"
-                              srcOne="https://img.icons8.com/ios-filled/50/angularjs.png"
-                              altOne="Angular"
-                              srcTwo="https://img.icons8.com/color/48/firebase.png"
-                              altTwo="Firebase"
-                              srcThree="https://img.icons8.com/fluency/48/primeng.png"
-                              altThree="PrimeNG"
-                              
-                              />
+                <CardProjects subtitle="Proyecto web donde se consumió un API puplica de películas"
+                              title="TodoPelisXD"
+                              linkRepo="https://github.com/cvilladiego/app-peliculas"
+                              linkDeploy="https://app-peliculas-e2783.firebaseapp.com/"
+                              iconOne="html"
+                              iconTwo="js"
+                              iconThree="css"
+                              /> 
             </div>
             <div class="flex flex-col w-full justify-center items-center mt-5">
-                <CardProjects subtitle="Proyecto web con autenticacíon para el control de los gastos personales"
-                              title="GastoGuard"
-                              linkRepo="https://github.com/villadiegocode/gasto-guard"
-                              linkDeploy="https://gastoguard-staging.netlify.app/"
-                              srcOne="https://img.icons8.com/ios-filled/50/angularjs.png"
-                              altOne="Angular"
-                              srcTwo="https://img.icons8.com/color/48/firebase.png"
-                              altTwo="Firebase"
-                              srcThree="https://img.icons8.com/fluency/48/primeng.png"
-                              altThree="PrimeNG"
-                              
+                <CardProjects subtitle="Proyecto web con lod personajes de está serie, incluye paginación y consumo de API"
+                              title="The Rick and Morty"
+                              linkRepo="https://github.com/cvilladiego/web-api-rick-angular"
+                              linkDeploy="https://rickandmortywebpage.netlify.app/"
+                              iconOne="angular"
+                              iconTwo="api"
+                              iconThree="css"
                               />
+                
             </div>
         </div>
     </main>
