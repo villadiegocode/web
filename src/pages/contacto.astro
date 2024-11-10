@@ -1,0 +1,23 @@
+---
+import CardContacto from "../components/CardContacto.astro";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Contactame">
+    <main class="m-auto lg:w-11/12 main-layout p-3 mt-3">
+        <div class="flex justify-center items-center">
+            <h2 class="font-bold text-4xl">Contáctame 👇</h2>
+
+        </div>
+        <CardContacto nombre="Carlos Villadiego", cargo="Desarrollador web", telefno="+573007462735" email="carlovinar93@gmail.com", direccion="Colombia, Montería"/>
+    </main>
+
+    <style>
+        .shadow-card {
+            box-shadow: 4px 4px black;
+    
+        }
+    </style>
+
+</Layout>
